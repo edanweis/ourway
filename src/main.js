@@ -2,33 +2,23 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import App from './App'
-import store from './store.js'
 
 Vue.config.productionTip = false
 const credentials = require('./credentials.js')
-import Vuetify from 'vuetify'
- 
+import Vuetify from 'vuetify' 
 Vue.use(Vuetify)
-// const WHS = require('whs')
-import * as WHS from 'whs'
-// Vue.use(WHS)
 
 import * as VueGoogleMaps from 'vue2-google-maps'
 Vue.use(VueGoogleMaps, {
   load: {
     key: credentials.googlemaps.key,
-    libraries: 'places', // This is required if you use the Autocomplete plugin
-    // OR: libraries: 'places,drawing'
-    // OR: libraries: 'places,drawing,visualization'
-    // (as you require)
+    libraries: 'places'
   }
 })
-
 
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
   template: '<App/>',
   components: { App },
-  store
 })
