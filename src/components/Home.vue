@@ -87,8 +87,7 @@ export default {
 }
 </script>
 
-<style lang="stylus" scoped>
-@import '../stylus/main'
+<style lang="css" scoped>
 
 .aframe{
   z-index: 2;

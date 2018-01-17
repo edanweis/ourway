@@ -19,9 +19,7 @@ export default {
 }
 </script>
 
-<style lang="stylus">
-@import './stylus/main'
-
+<style lang="css">
 
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
