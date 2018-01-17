@@ -111,7 +111,7 @@ export default {
       this.$emit('move', map.getCenter())
     },
     mapMoveend(map){
-      this.$emit('moveend')
+      this.$emit('moveend', map.getCenter())
       // map.setZoom(Math.round(map.getZoom()));
     },
     mapMovestart(){

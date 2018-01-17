@@ -1,6 +1,4 @@
-# ourway
-
-> A Vue.js project
+# Google Street View Panorama + A-Frame VR
 
 ## Build Setup
 
@@ -18,4 +16,16 @@ npm run build
 npm run build --report
 ```
 
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+
+## Define your credentials.js in `src/credentials.js`
+
+```
+module.exports  = {
+	googlemaps: {
+		key: 'YOUR_API_KEY'
+	}
+}
+
+```
+
+[Get Google Maps API Key](https://developers.google.com/maps/documentation/javascript/get-api-key)

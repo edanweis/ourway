@@ -124,11 +124,11 @@ export default {
 <style lang="css" scoped>
 
 #map {
-	position: absolute;
-	top: 0px;
-	right: 0px;
-	width: 500px;
-    height: 300px;
+	position: relative;
+	/*top: 0px;*/
+	/*right: 0px;*/
+	width: 100%;
+    height: 50vw;
     background-color: white;
       }
 

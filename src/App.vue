@@ -1,7 +1,11 @@
 <template>
-  <div id="app">
-    <home/>
-  </div>
+  <v-app id="app">  
+  <v-content>
+    <v-container fill-height>
+      <home/>
+    </v-container>
+  </v-content>
+  </v-app>
 </template>
 
 <script>
@@ -15,13 +19,22 @@ export default {
 }
 </script>
 
-<style>
+<style lang="stylus">
+@import './stylus/main'
+
+
 #app {
   font-family: 'Avenir', Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
- margin: 0; 
- padding: 0;
- overflow: hidden;
+  margin: 0; 
+  padding: 0;
 }
+
+html, body{
+  // overflow: hidden !important;
+  margin: 0; 
+  padding: 0;
+}
+
 </style>

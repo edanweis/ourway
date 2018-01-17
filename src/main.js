@@ -6,6 +6,12 @@ import store from './store.js'
 
 Vue.config.productionTip = false
 const credentials = require('./credentials.js')
+import Vuetify from 'vuetify'
+ 
+Vue.use(Vuetify)
+// const WHS = require('whs')
+import * as WHS from 'whs'
+// Vue.use(WHS)
 
 import * as VueGoogleMaps from 'vue2-google-maps'
 Vue.use(VueGoogleMaps, {
